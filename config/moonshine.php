@@ -1,8 +1,7 @@
 <?php
 
-use App\Models\User;
-use MoonShine\Models\MoonshineUser;
 use MoonShine\Exceptions\MoonShineNotFoundException;
+use MoonShine\Models\MoonshineUser;
 
 return [
     'dir' => 'app/MoonShine',
@@ -38,7 +37,7 @@ return [
         'providers' => [
             'moonshine' => [
                 'driver' => 'eloquent',
-                'model' => User::class,
+                'model' => MoonshineUser::class,
             ],
         ],
         'footer' => '',
